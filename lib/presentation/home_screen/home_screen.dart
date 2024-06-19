@@ -53,6 +53,7 @@ class _HomeScreenState extends State<HomeScreen>
     super.build(context);
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: AppTheme.lightBlue,
         title: Text('Home Screen'),
       ),
