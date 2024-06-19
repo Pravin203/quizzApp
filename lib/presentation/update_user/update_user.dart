@@ -69,10 +69,10 @@ class _UpdateUserDetailsState extends State<UpdateUserDetails> {
 
         // Create a map to store updated fields
         Map<String, dynamic> updatedFields = {
-          'firstName': _firstNameController.text,
-          'lastName': _lastNameController.text,
-          'companyName': _weightNameController.text,
-          'role': _heightController.text,
+          'firstname': _firstNameController.text,
+          'lastname': _lastNameController.text,
+          'weight': _weightNameController.text,
+          'height': _heightController.text,
           'email': _emailController.text,
           'description': _descriptionController.text,
           'updatedAt': DateTime.now().toString(),
@@ -103,7 +103,7 @@ class _UpdateUserDetailsState extends State<UpdateUserDetails> {
           });
         }
       } else {
-     //   Looks like you missed something
+        //   Looks like you missed something
       }
     } catch (e) {
       if (kDebugMode) {
@@ -142,7 +142,6 @@ class _UpdateUserDetailsState extends State<UpdateUserDetails> {
           'Update User',
           style: AppTheme.h6.copyWith(color: AppTheme.white),
         ),
-
       ),
       backgroundColor: AppTheme.white,
       body: Form(
@@ -275,8 +274,7 @@ class _UpdateUserDetailsState extends State<UpdateUserDetails> {
                     color: AppTheme.darkGrey,
                     fontWeight: FontWeight.w500,
                   ),
-                  contentPadding:
-                  const EdgeInsets.fromLTRB(10, 18.5, 5.0, 1.0),
+                  contentPadding: const EdgeInsets.fromLTRB(10, 18.5, 5.0, 1.0),
                   labelStyle: const TextStyle(
                     color: AppTheme.darkGrey,
                     fontWeight: FontWeight.w500,
@@ -298,8 +296,8 @@ class _UpdateUserDetailsState extends State<UpdateUserDetails> {
                     gapPadding: 4,
                   ),
                   errorStyle: const TextStyle(height: 0, color: AppTheme.white
-                    // Hide the error text
-                  ),
+                      // Hide the error text
+                      ),
                   prefixIconColor: Colors.yellow,
                   filled: true,
                   fillColor: AppTheme.textFieldblackColor,
